@@ -321,7 +321,11 @@ h6, .h6 {
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: justify; }
+
+.centro{
+  text-align: center; }
 
 .display-1 {
   font-size: 6rem;
@@ -489,6 +493,7 @@ pre {
 
 .row {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-right: -1.5rem;
   margin-left: -1.5rem; }
@@ -7391,7 +7396,7 @@ form .row:first-child .floating-label-form-group {
 
 .page-section-heading {
   display: inline-block;
-text-align: justify;  }
+  text-align: justify;  }
 
 .pre {
   white-space: pre; }
