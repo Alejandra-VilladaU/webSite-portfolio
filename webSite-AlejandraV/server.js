@@ -3,9 +3,11 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname+'/web-site-alejandra-v'));
-app.get('/',function(req,res){
-  res.sendFile(path.join(__dirname+'/web-site-alejandra-v/index.html'));
+app.use(express.static(__dirname+'/dist/web-site-alejandra-v'));
+app.get('/*',function(req,res){
+  res.sendFile(path.join(__dirname+'/dist/web-site-alejandra-v/index.html'));
 });
 
 app.listen(process.env.PORT || 8080);
+
+console.log('Console listening!');
